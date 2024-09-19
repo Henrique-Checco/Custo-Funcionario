@@ -1,0 +1,21 @@
+﻿@model CustoFuncionarioApp.Models.Funcionario
+
+<form asp-controller="Funcionario" asp-action="Calcular" method="post" style="display:flex">
+    <div>
+        <label style="margin-left:20px">Nome:</label>
+        <input asp-for="Nome" />
+    </div>
+    <div>
+        <label style="margin-left:20px">Salário Base:</label>
+        <input asp-for="SalarioBase" />
+    </div>
+    <div>
+        <label style="margin-left:20px">Desconto:</label>
+        <input asp-for="Desconto" />
+    </div>
+    <div>
+        <label style="margin-left:20px">Benefício:</label>
+        <input asp-for="Beneficio" />
+    </div>
+    <button type="submit" style="margin-left:20px">Calcular Custo</button>
+</form>
